@@ -1,0 +1,43 @@
+name: Daily paper candidates (free review)
+on:
+  schedule:
+    - cron: '0 8 * * *'
+      timezone: 'Asia/Shanghai'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: daily-papers-review
+  cancel-in-progress: false
+jobs:
+  candidate-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Search OpenAlex (no OpenAI API required)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/daily_papers.py
+      - name: Open PR for human review only
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/papers-awaiting-review
+          base: main
+          add-paths: |
+            papers.json
+            review/PENDING_REVIEW.md
+          commit-message: 'chore: prepare papers for human review'
+          title: '📚 每日论文待审核（合并才会发布）'
+          body: |
+            ## 审核清单
+            - [ ] 检查每篇论文是否真实、近期、符合研究方向
+            - [ ] 阅读原文，核对作者、年份、摘要和标签
+            - [ ] 删除不合适的记录，并将英文摘要改写为准确中文摘要
+            - [ ] 检查 `papers.json` 没有删除已有论文
+            **只有手动点击 Merge pull request 才会更新公开网站。**
