@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tiger",
+    "title": "Recommender Systems with Generative Retrieval",
+    "year": "2023",
+    "category": "生成式推荐",
+    "tags": [
+      "TIGER",
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "TIGER 论文：通过残差量化构建物品语义 ID，并用生成模型进行推荐检索。",
+    "status": "已阅读",
+    "url": "https://arxiv.org/abs/2305.05065",
+    "notes": "重点：RQ-VAE 的多层码本、语义 ID 的生成和序列推荐过程。\n个人思考：可分析不同层的码字利用率及碰撞现象。"
+  },
+  {
+    "id": "muon",
+    "title": "Muon: An optimizer for hidden layers in neural networks",
+    "year": "2024",
+    "category": "码本稳定性",
+    "tags": [
+      "Muon",
+      "正交更新",
+      "优化算法"
+    ],
+    "summary": "关于正交化矩阵更新的优化策略，可为码本稳定性研究提供方法启发。",
+    "status": "待读",
+    "url": "https://kellerjordan.github.io/posts/muon/",
+    "notes": "个人思考：需研究正交更新如何与语义对齐损失配合。"
+  },
+  {
+    "id": "gris",
+    "title": "Neither Black nor White: Balancing Semantic and Collaborative Signals with Graph-Informed Semantic IDs (GrIS)",
+    "year": "2026",
+    "category": "SID质量评价",
+    "tags": [
+      "Semantic ID",
+      "协同信号",
+      "图模型"
+    ],
+    "summary": "探讨如何在 Semantic ID 构建中融合语义内容与协同关系。",
+    "status": "待读",
+    "url": "",
+    "notes": "示例条目，来自最初提供的博客截图。原文与详细笔记待补充。"
+  },
+  {
+    "id": "topic",
+    "title": "特朗普言论对黄金与原油分钟级市场的影响（研究专题）",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金与原油",
+      "事件研究"
+    ],
+    "summary": "个人研究专题占位记录，不是已发表论文。",
+    "status": "整理中",
+    "url": "",
+    "notes": "拟统一使用 UTC 时间，研究金融市场在特朗普发布言论前后的反应。"
+  }
+]
