@@ -69,5 +69,70 @@
     "status": "整理中",
     "url": "",
     "notes": "拟统一使用 UTC 时间，研究金融市场在特朗普发布言论前后的反应。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.15864",
+    "title": "Personalized LLM Recommendation with Semantic IDs: Autoregressive Beam Search vs. Multi-Token Prediction",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Large-scale personalization is shifting from embedding-table retrieval to LLM-based recommenders that generate the Semantic ID (SID) of the item to recommend, where each SID is a short sequence of discrete hierarchical content codes. A single instruction-tuned model can then unify retrieval, content understanding, and language, and recommend brand-new titles from their content alone using SID; then, how should the model generate the SID? Traditionally, models rely on a single language modeling head that generates tokens autoregressively, typically using constrained beam search. In contrast, an emerging body of work explores multi-token prediction (MTP), where dedicated heads predict all tokens in parallel, substantially reducing the decoding latency associated with beam search. We report an industry-scale, apples-to-apples comparison of these two generation paradigms: single-head autoregressive decoding vs. MTP. We introduce a new auxiliary ranking loss, defined over the joint SID score, to train the MTP objective. We evaluate the SID training objectives on both quality and training/",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.15864",
+    "notes": "OpenAlex: https://openalex.org/W7221761071\n作者: Sejoon Oh, Fernando Amat Gil, Evan Smothers, Dan Iter, Mark Thornburg\n发表日期: 2026-10-11\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.28568",
+    "title": "Evolving Semantic Indexes for Generative Retrieval",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval (GR) casts search and recommendation as autoregressive generation of discrete semantic identifiers (SIDs). SID design largely determines GR quality, but its discrete, interdependent components (SID construction, collision handling, decoding, and training) cannot be optimized end-to-end with gradients and remain largely hand-designed. We introduce a framework that improves these components through LLM-driven evolutionary program search, to our knowledge the first application of this approach to GR. A locally served, open-weight 31B model mutates executable GR components, so no proprietary LLM API is used, and a 1M-parameter proxy decoder provides fast feedback in place of repeatedly training the 1B target generator. Across 21 SID programs on NQ320K, proxy and target Recall@100 show strong rank correlation (Spearman $ρ= 0.90$). Guided by this proxy, evolution improves the seed GR on NQ320K, MSMARCO300K, and a multilingual e-commerce dataset under a fixed training recipe. On NQ320K, jointly evolving SID construction and collision handling improves Recall@1 from 55.8",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.28568",
+    "notes": "OpenAlex: https://openalex.org/W7223117737\n作者: Jinming Nian, Jyun‐Yu Jiang, Henry Tsai, Yi Fang, Zhirong Liang\n发表日期: 2026-10-20\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.12977",
+    "title": "Beyond Semantic IDs: Finite-Beam Reachability and Continuous-Query Generation in Generative Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative recommendation (GR) of social media platforms commonly retrieves items by autoregressively decoding discrete Semantic IDs (SIDs) with finite-width beam search. This work examines how this output interface constrains whether held-out targets enter finite returned lists, while distinguishing catalog-wide scoreability from empirical top-K support. We introduce two continuous-query paradigms: CQG-Single generates one retrieval query in a single pass, and CQG-AR autoregressively generates continuous residual updates, retaining step-wise decoding while removing the SID item-token vocabulary, code lookup, and discrete beam expansion. These designs thereby eliminate the SID-specific reachability constraint induced by finite-beam decoding and avoid the technical challenge of aligning a discrete SID vocabulary with the pretrained backbone's vector space. Both methods make every encoded item directly scoreable through dense or approximate-nearest-neighbor retrieval. Under a unified protocol with valid-prefix constrained decoding, CQG-Single exceeds the TIGER-style baseline in all sev",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.12977",
+    "notes": "OpenAlex: https://openalex.org/W7221518235\n作者: Yu Sun, Renkai Xiang, Zuodong Xiang, Junwei Zhou, Yike Zhang\n发表日期: 2026-10-09\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.16132",
+    "title": "UniSGR-V2: Stepwise Target-Side Feature Anticipation and Crossing for Generative Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Semantic-ID-based generative recommendation unifies retrieval and ranking through autoregressive decoding but differs structurally from discriminative models, which can directly access rich target-item side features. The attributes are compressed into a finite codebook during quantization, while the target item remains undetermined during decoding and its features cannot be looked up. This target-side feature vacuum weakens generation at each semantic-ID level through high conditional entropy and cascading errors, and final ranking through missing target-side feature crossing. Existing methods interact with candidate representations or generate discrete attribute tokens, but none reconstructs a continuous target-side representation inside decoding to support both stepwise generation and ranking. We propose TacGR (Stepwise Target-Side Feature Anticipation and Crossing for Generative Recommendation). Before decoding each codeword, TacGR anticipates a continuous target-side feature vector and crosses it with the semantic prefix and user behavior sequence inside the decoder. The crossed ",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.16132",
+    "notes": "OpenAlex: https://openalex.org/W7221795745\n作者: Jun Yang, Jiasi Chen, Jiawei Sun, Ziyue Guo, Jianan Yan\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.16979",
+    "title": "WeGR: Towards Unified Generative Retrieval via Behavior-aware Tokenization and Preference Alignment",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval (GR) offers a promising paradigm for industrial search by unifying candidate generation within an autoregressive framework. However, effectively leveraging user behaviors in industrial GR remains challenging: existing SID tokenization methods struggle to preserve collaborative signals while maintaining balanced codebook utilization, whereas reinforcement learning (RL) for prioritizing high-value candidates suffers from sparse rewards when generated SIDs fail to match positive items. To address these challenges, we propose WeGR, a unified GR framework with two complementary components. Specifically, the Collaborative and Collapse-free Tokenizer (CoCo-VAE) injects query-to-item and item-to-item collaborative signals into continuous representations before quantization, preserving behavioral information without disrupting codebook optimization. It further couples first-layer codebook refresh to reactivate underutilized codewords with fidelity anti-collapse regularization, which broadens gradient coverage over relevant codewords and penalizes collisions in deeper laye",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.16979",
+    "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
