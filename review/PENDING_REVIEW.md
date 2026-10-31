@@ -1,27 +1,39 @@
 # 待审核论文（免费元数据版本）
 
-运行日期：2026-10-27（UTC）
+运行日期：2026-10-31（UTC）
 
 ⚠️ **仅供人工审核；尚未公开发布。** 内容由 OpenAlex 元数据和关键词规则生成，中文摘要没有自动翻译，请核实原文、日期、相关性并改写摘要。
 
 审核时在 PR 的 Files changed 中核查 papers.json；移除不合适论文后再合并。
 
-- **[Personalized LLM Recommendation with Semantic IDs: Autoregressive Beam Search vs. Multi-Token Prediction](https://doi.org/10.48550/arxiv.2610.15864)**（2026；生成式推荐；匹配分 15）
+- **[LESSRec: Level-Specific History Modeling for Semantic ID-Based Recommendation](https://doi.org/10.48550/arxiv.2610.37286)**（2026；生成式推荐；匹配分 14）
+  - 标签：Semantic ID, RQ-VAE
+  - 英文摘要（未经过 AI 翻译）: Semantic ID-based recommendation represents each item as a sequence of semantic tokens obtained through residual quantization. This paradigm generates the next item's tokens autoregressively from coarse to fine, entailing each prediction attending to historical tokens at all semantic levels. However, our inference-time analysis reveals that historical tokens at the target-token's semantic level tend to be more…
+
+- **[PinGER: Token-Efficient Generative Retrieval with Semantic IDs](https://doi.org/10.48550/arxiv.2610.33435)**（2026；生成式推荐；匹配分 14）
   - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Large-scale personalization is shifting from embedding-table retrieval to LLM-based recommenders that generate the Semantic ID (SID) of the item to recommend, where each SID is a short sequence of discrete hierarchical content codes. A single instruction-tuned model can then unify retrieval, content understanding, and language, and recommend brand-new titles from their content alone using SID; then, how should…
+  - 英文摘要（未经过 AI 翻译）: Generative retrieval replaces nearest-neighbor search with token-by-token decoding of an item's semantic ID (SID). But existing SID-based methods primarily use L levels of tokens sequentially to represent each item in the input history. As a result, a fixed context window holds L times fewer items than it would with one embedding per item. We present PinGER, a generative retriever deployed at Pinterest that re…
 
-- **[Evolving Semantic Indexes for Generative Retrieval](https://doi.org/10.48550/arxiv.2610.28568)**（2026；生成式推荐；匹配分 14）
+- **[Octen-WebGR: Scaling Generative Retrieval to 200 Million Web Pages](https://doi.org/10.48550/arxiv.2610.35256)**（2026；生成式推荐；匹配分 12）
   - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Generative retrieval (GR) casts search and recommendation as autoregressive generation of discrete semantic identifiers (SIDs). SID design largely determines GR quality, but its discrete, interdependent components (SID construction, collision handling, decoding, and training) cannot be optimized end-to-end with gradients and remain largely hand-designed. We introduce a framework that improves these components …
+  - 英文摘要（未经过 AI 翻译）: Navigational search aims to find a single target page among hundreds of millions of web pages. Click tables work well for queries seen before but cannot generalise to new formulations, while embedding retrievers generalise across content but often rank navigational targets poorly. We introduce Octen-WebGR, a generative retrieval framework that stores web pages in the parameters of a language model: given a que…
 
-- **[Beyond Semantic IDs: Finite-Beam Reachability and Continuous-Query Generation in Generative Recommendation](https://doi.org/10.48550/arxiv.2610.12977)**（2026；生成式推荐；匹配分 13）
+- **[Reasoning Reranking with Semantic IDs as the Sole Item Representation](https://doi.org/10.48550/arxiv.2610.22797)**（2026；生成式推荐；匹配分 10）
   - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Generative recommendation (GR) of social media platforms commonly retrieves items by autoregressively decoding discrete Semantic IDs (SIDs) with finite-width beam search. This work examines how this output interface constrains whether held-out targets enter finite returned lists, while distinguishing catalog-wide scoreability from empirical top-K support. We introduce two continuous-query paradigms: CQG-Single…
+  - 英文摘要（未经过 AI 翻译）: Reasoning rerankers write a rationale before ranking a candidate slate, and existing systems read item metadata to do so, even though generative recommenders increasingly represent items as compact Semantic IDs (SIDs). Ranking from SIDs alone has two appeals: SID prompts are far shorter than the matched item text, and although item codes are fixed from content, the backbone learns their token embeddings in par…
 
-- **[UniSGR-V2: Stepwise Target-Side Feature Anticipation and Crossing for Generative Recommendation](https://doi.org/10.48550/arxiv.2610.16132)**（2026；生成式推荐；匹配分 12）
-  - 标签：码本稳定性
-  - 英文摘要（未经过 AI 翻译）: Semantic-ID-based generative recommendation unifies retrieval and ranking through autoregressive decoding but differs structurally from discriminative models, which can directly access rich target-item side features. The attributes are compressed into a finite codebook during quantization, while the target item remains undetermined during decoding and its features cannot be looked up. This target-side feature …
+- **[SMI: Ontology-Grounded Semantic IDs for Hierarchy-Aware Medical Concept Representation](https://doi.org/10.48550/arxiv.2610.18672)**（2026；生成式推荐；匹配分 9）
+  - 标签：Semantic ID
+  - 英文摘要（未经过 AI 翻译）: Biomedical language models (LMs) provide strong representations for clinical tasks, but they often fail to capture the hierarchical structure among medical concepts. This limitation is especially pronounced for rare and fine-grained clinical codes in long-tailed vocabularies, where hierarchy-agnostic LM representations become less informative as concept frequency decreases. We introduce Semantic Medical Identi…
 
-- **[WeGR: Towards Unified Generative Retrieval via Behavior-aware Tokenization and Preference Alignment](https://doi.org/10.48550/arxiv.2610.16979)**（2026；生成式推荐；匹配分 12）
-  - 标签：码本稳定性
-  - 英文摘要（未经过 AI 翻译）: Generative retrieval (GR) offers a promising paradigm for industrial search by unifying candidate generation within an autoregressive framework. However, effectively leveraging user behaviors in industrial GR remains challenging: existing SID tokenization methods struggle to preserve collaborative signals while maintaining balanced codebook utilization, whereas reinforcement learning (RL) for prioritizing high…
+- **[Fiscal Dominance, Tariff Laffer Limits, and Dual-Shock Stagflation: A Macroeconomic and Deterministic Governance Analysis of the 2026 "Trump Dividend" and Iran Military Operations](https://doi.org/10.5281/zenodo.23777954)**（2026；金融市场；匹配分 12）
+  - 标签：特朗普言论, 黄金, 原油
+  - 英文摘要（未经过 AI 翻译）: This monograph provides a rigorous macroeconomic, political-economy, and institutional governance analysis of the 2026 United States fiscal-military policy mix ahead of the 2026 midterm elections: specifically, the proposed tariff-funded "Trump Dividend" ($5,000 universal adult cash transfer totaling $1.2–$1.3 trillion) alongside the 2026 Iran military operations ($80–$100 billion supplemental combat expenditu…
+
+- **[Jawboning the Fed: Do Markets Listen When Administrations Talk?](https://doi.org/10.48550/arxiv.2610.32300)**（2026；金融市场；匹配分 7）
+  - 标签：特朗普言论
+  - 英文摘要（未经过 AI 翻译）: We provide the first systematic evidence on whether financial markets price political pressure on the Federal Reserve as a signal of future monetary policy. Using approximately four decades of Reuters newswire articles from 1988 to 2025, classified by an open-weight large language model ensemble into dovish and hawkish pressure, we estimate the daily response of interest rate expectations across the term struc…
+
+- **[Higher education governance under AI and geopolitical disruption: a socio-technical framework for administrative artificial intelligence](https://doi.org/10.3389/feduc.2026.1997227)**（2026；金融市场；匹配分 7）
+  - 标签：金融市场
+  - 英文摘要（未经过 AI 翻译）: Artificial intelligence (AI) has reached the administrative core of the universities, where students are recruited, admitted and supported. We call this administrative AI, meaning chatbots, predictive analytics and automated screening applied to administration rather than to teaching. It arrived rapidly, at an uncertain moment for higher education governance. Geopolitical upheaval is troubling student mobility…

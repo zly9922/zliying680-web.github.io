@@ -134,5 +134,112 @@
     "status": "待读",
     "url": "https://doi.org/10.48550/arxiv.2610.16979",
     "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.37286",
+    "title": "LESSRec: Level-Specific History Modeling for Semantic ID-Based Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Semantic ID-based recommendation represents each item as a sequence of semantic tokens obtained through residual quantization. This paradigm generates the next item's tokens autoregressively from coarse to fine, entailing each prediction attending to historical tokens at all semantic levels. However, our inference-time analysis reveals that historical tokens at the target-token's semantic level tend to be more informative, whereas other levels can introduce interference. Motivated by these findings, we propose LESSRec that separately encodes the historical token sequence at each semantic level and restricts attention over historical tokens to the sequence at the target token's semantic level during prediction. To complement these level-specific histories, LESSRec explicitly provides an item-level semantic sequence that represents each historical item's overall semantics in chronological order. The decoder accesses the level-aligned token sequence and the item-level semantic sequence through two separate cross-attention branches and fuses their contexts. We further introduce LESSRec+,",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.37286",
+    "notes": "OpenAlex: https://openalex.org/W7224130245\n作者: Shangxin Yang, Zongwei Wang, Jing Long, Junliang Yu, Min Gao\n发表日期: 2026-10-27\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.33435",
+    "title": "PinGER: Token-Efficient Generative Retrieval with Semantic IDs",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval replaces nearest-neighbor search with token-by-token decoding of an item's semantic ID (SID). But existing SID-based methods primarily use L levels of tokens sequentially to represent each item in the input history. As a result, a fixed context window holds L times fewer items than it would with one embedding per item. We present PinGER, a generative retriever deployed at Pinterest that retains SID outputs while making input histories compact, built on three ideas. (1) An asymmetric attention mask over interleaved SID and dense tokens lets later items attend only to the dense ones, so the model is supervised at every SID position in training yet serves one token per item while computing the same function. (2) Generation is controllable through goal-conditioned outputs, reinforcement learning, and a prefix-diversity penalty, which together steer retrieval toward surface-specific goals and diverse candidates. (3) A serving stack built for efficient wide-beam generation is paired with decoding constrained to valid identifiers and candidate resolution from a host-loc",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.33435",
+    "notes": "OpenAlex: https://openalex.org/W7223974298\n作者: Xinyi Li, Sujan Reddy Ale, Yi-Ping Hsu, Zelun Wang, Yilin Chen\n发表日期: 2026-10-24\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.35256",
+    "title": "Octen-WebGR: Scaling Generative Retrieval to 200 Million Web Pages",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Navigational search aims to find a single target page among hundreds of millions of web pages. Click tables work well for queries seen before but cannot generalise to new formulations, while embedding retrievers generalise across content but often rank navigational targets poorly. We introduce Octen-WebGR, a generative retrieval framework that stores web pages in the parameters of a language model: given a query, the model generates a two-token semantic identifier constrained to a table of real URLs. We develop Octen-WebGR-4B, which indexes 201 million web pages, and evaluate it on real navigational traffic from the month after training. Generative retrieval is most effective on new ways of asking for familiar pages: for unseen queries targeting pages with substantial interaction history, it ranks the correct page first 30.9% of the time, against 17.2% for a dense retriever trained on the same clicks (21.4% with a click prior). Embedding retrieval keeps an advantage on rarely visited pages, so the two approaches generalise on complementary sides, the query and the page. Over all navi",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.35256",
+    "notes": "OpenAlex: https://openalex.org/W7223791708\n作者: Guangwei Xu, Wenkai Zhang, Yawen Liu, Dongxu Zhang, Xijie Xu\n发表日期: 2026-10-26\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.22797",
+    "title": "Reasoning Reranking with Semantic IDs as the Sole Item Representation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Reasoning rerankers write a rationale before ranking a candidate slate, and existing systems read item metadata to do so, even though generative recommenders increasingly represent items as compact Semantic IDs (SIDs). Ranking from SIDs alone has two appeals: SID prompts are far shorter than the matched item text, and although item codes are fixed from content, the backbone learns their token embeddings in part from user-item interaction sequences, so the tokens can carry behavioral signal that item text lacks. That training targets next-item generation, and whether it supports ranking a supplied slate from SIDs alone is untested. We build ReRankID, a controlled testbed in which models reason and rank from a history and slate shown only as SIDs, varying item rendering, history length, and slate size one at a time. On this testbed, such models often copy the input order instead of reranking, and readable metadata does not repair the failure. We compare supervised fine-tuning, rejection-sampled self-training, on-policy distillation, and verifier-based reinforcement learning as post-tra",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.22797",
+    "notes": "OpenAlex: https://openalex.org/W7222931160\n作者: Zhenwei Tang, Jintao Liu, Di Bai, Xidong Wu, Xinwu Cheng\n发表日期: 2026-10-16\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.18672",
+    "title": "SMI: Ontology-Grounded Semantic IDs for Hierarchy-Aware Medical Concept Representation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Biomedical language models (LMs) provide strong representations for clinical tasks, but they often fail to capture the hierarchical structure among medical concepts. This limitation is especially pronounced for rare and fine-grained clinical codes in long-tailed vocabularies, where hierarchy-agnostic LM representations become less informative as concept frequency decreases. We introduce Semantic Medical Identifier (SMI), a training-free framework for constructing ontology-grounded Semantic IDs and hierarchy-aware medical concept representations. For each diagnosis, procedure, or medication concept, SMI defines its Semantic ID as the coarse-to-fine path through an expert-defined medical ontology. SMI then aggregates frozen biomedical LM embeddings across the corresponding ontology levels to form hierarchy-aware medical concept representations that preserve coarse-to-fine clinical semantics. The base SMI uses uniform aggregation across ontology levels, while a level-weighted variant selects global level weights on validation data. Our theoretical analysis shows that SMI yields more inf",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.18672",
+    "notes": "OpenAlex: https://openalex.org/W7221754243\n作者: Ziyang Song, Shen Lia, Yixuan Li, Qincheng Lu, Weihao Li\n发表日期: 2026-10-13\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.5281/zenodo.23777954",
+    "title": "Fiscal Dominance, Tariff Laffer Limits, and Dual-Shock Stagflation: A Macroeconomic and Deterministic Governance Analysis of the 2026 \"Trump Dividend\" and Iran Military Operations",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金",
+      "原油"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: This monograph provides a rigorous macroeconomic, political-economy, and institutional governance analysis of the 2026 United States fiscal-military policy mix ahead of the 2026 midterm elections: specifically, the proposed tariff-funded \"Trump Dividend\" ($5,000 universal adult cash transfer totaling $1.2–$1.3 trillion) alongside the 2026 Iran military operations ($80–$100 billion supplemental combat expenditure embedded within a $1.5 trillion FY2027 defense topline). Drawing on Congressional Budget Office (CBO) 2026–2036 baseline projections—where federal deficits stand at 5.8% of GDP ($1.9 trillion) and public debt trajectories climb from 101% to 120% of GDP (and over 175% under permanent OBBBA extensions)—we demonstrate three foundational theorems. First, financing a $1.3 trillion lump-sum transfer via sweeping tariffs violates the mathematical upper bound of the Tariff Laffer Curve ($300–$500 billion maximum revenue ceiling due to import demand elasticity and trade displacement) while inducing a quadratic expansion in Harberger deadweight loss ($\\text{DWL} \\propto \\tau^2$), impos",
+    "status": "待读",
+    "url": "https://doi.org/10.5281/zenodo.23777954",
+    "notes": "OpenAlex: https://openalex.org/W7224411458\n作者: Yoko(洋子) Hasebe(長谷部)\n发表日期: 2026-10-29\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2610.32300",
+    "title": "Jawboning the Fed: Do Markets Listen When Administrations Talk?",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: We provide the first systematic evidence on whether financial markets price political pressure on the Federal Reserve as a signal of future monetary policy. Using approximately four decades of Reuters newswire articles from 1988 to 2025, classified by an open-weight large language model ensemble into dovish and hawkish pressure, we estimate the daily response of interest rate expectations across the term structure, the US dollar, inflation compensation, and market volatility. Dovish pressure lowers near-term rate expectations by roughly one basis point per pressure event---equivalent to a four-percent increase in the implied probability of a rate cut at the next FOMC meeting---with the effect decaying monotonically and vanishing beyond the three-month horizon. Hawkish pressure has no detectable effect. Furthermore, excluding the Trump presidencies does not weaken the estimate, ruling out the possibility that the result is confined to an idiosyncratic recent episode. The response is accompanied by dollar depreciation, with stable inflation compensation and market volatility. We interp",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2610.32300",
+    "notes": "OpenAlex: https://openalex.org/W7223668008\n作者: Michela Baretti, Umberto Collodel, Jacopo Zacché\n发表日期: 2026-10-23\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.3389/feduc.2026.1997227",
+    "title": "Higher education governance under AI and geopolitical disruption: a socio-technical framework for administrative artificial intelligence",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Artificial intelligence (AI) has reached the administrative core of the universities, where students are recruited, admitted and supported. We call this administrative AI, meaning chatbots, predictive analytics and automated screening applied to administration rather than to teaching. It arrived rapidly, at an uncertain moment for higher education governance. Geopolitical upheaval is troubling student mobility and internationalisation, and universities whose finances depend on international enrolment are discovering how resilient they are. Research has been slow to follow, remaining confined to teaching and learning. Where administrative AI is noticed, it is classified as routine efficiency, far from the politics of mobility or the question of what institutions can govern. We ask three questions here. What motivates higher education institutions (HEIs) to include AI in their administrative services, and what global and geopolitical forces shape those drivers? How do such systems intersect with visa regimes, with regional education hubs, and with the financial exposure of universities",
+    "status": "待读",
+    "url": "https://doi.org/10.3389/feduc.2026.1997227",
+    "notes": "OpenAlex: https://openalex.org/W7224173446\n作者: Namita Pandey, Dan Davies\n发表日期: 2026-10-29\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
