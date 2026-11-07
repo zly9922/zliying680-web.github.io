@@ -134,5 +134,114 @@
     "status": "待读",
     "url": "https://doi.org/10.48550/arxiv.2610.16979",
     "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.3390/computers15110807",
+    "title": "Budget-Aware Adaptive Test-Time Compute with Hierarchical Self-Verification for Semantic ID Generative Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Semantic identifier (SID) generative recommenders cast retrieval as autoregressive decoding over short sequences of residual-quantized codewords. Most published SID recommenders decode all requests with one fixed beam width, which is optimal only if the marginal utility of compute is constant across requests. We find that it is not; additional search changes little for users with consistent histories, but improves accuracy substantially for cold start, interest-drifting, and long-tail users. The main methodological contribution of this paper is request-level allocation of decoding compute, in which a router predicts the accuracy gain of each configuration in a finite decoding menu over the cheapest configuration and selects the configuration with the largest gain net of a priced cost. The selection rule follows from standard Lagrangian arguments, which we use as tools; what is specific to this work is the use of this per-configuration gain as the routing target for SID decoding instead of a difficulty or uncertainty score. The resulting framework, called Bastion, combines the router ",
+    "status": "待读",
+    "url": "https://doi.org/10.3390/computers15110807",
+    "notes": "OpenAlex: https://openalex.org/W7225340348\n作者: Aowei Shen, Wenhe Liu\n发表日期: 2026-11-05\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1145/3799682.3839993",
+    "title": "From Head to Tail: Asymmetric Knowledge Transfer in Long-tail Recommendation with Generative Semantic IDs",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Long-tail recommendation in real-world e-commerce platforms remains challenging due to severe data imbalance. Existing methods often struggle to combine content-based multimodal features with collaborative signals. Many of these methods also ignore an important asymmetry in knowledge transfer between head and tail IDs: noisy signals from tail IDs can hurt representation learning for head IDs. This paper presents AKT-Rec, a framework for A symmetric K nowledge T ransfer in long-tail Rec ommendation that uses LLM-generated semantic IDs. AKT-Rec uses Multimodal LLMs (MLLMs) with supervised fine-tuning to align content representations with collaborative information for both items and users, producing semantic representations. It then discretizes these representations into semantic IDs with a Residual-Quantized VAE (RQ-VAE), which yields semantic clusters of similar entities. AKT-Rec has two main components: (1) Cluster-Guided Adaptive Embedding , which decomposes each ID representation into a cluster-level embedding that captures shared semantics and an individual embedding. Through an a",
+    "status": "待读",
+    "url": "https://doi.org/10.1145/3799682.3839993",
+    "notes": "OpenAlex: https://openalex.org/W7162313945\n作者: Chenyi Yan, Ruocong Tang, Xing Fang, Yang Huang, He Guo\n发表日期: 2026-11-03\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1145/3799682.3840110",
+    "title": "Efficient Generative Retrieval for E-commerce Search with Semantic Cluster IDs and Expert-Guided RL",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval offers a promising alternative by unifying the multi-stage retrieval process into a single end-to-end model. However, its practical adoption in industrial e-commerce search remains challenging, given the massive and dynamic product catalogs, strict latency requirements, and the need to align retrieval with downstream ranking goals. In this work, we propose a retrieval framework tailored for real-world recall scenarios, positioning generative retrieval as a recall-stage supplement rather than an end-to-end replacement. Our method, CQ-SID (Category-and-Query constrained Semantic ID), employs category-aware and query-item contrastive learning along with Residual Quantized VAEs to encode items into hierarchical semantic cluster identifiers, significantly improving click and exposure metrics and reducing beam search size and inference time. Additionally, we develop EG-GRPO (Expert-Guided Group Relative Policy Optimization), a reinforcement learning approach that aligns generative recall with downstream ranking under sparse rewards by injecting ground-truth samples to ",
+    "status": "待读",
+    "url": "https://doi.org/10.1145/3799682.3840110",
+    "notes": "OpenAlex: https://openalex.org/W7161280307\n作者: Jianbo Zhu, Xing Fang, Jing Wang, Mingmin Jin, Bokang Wang\n发表日期: 2026-11-03\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1145/3799682.3840166",
+    "title": "HiGR: Industrial-Scale Hierarchical Generative Slate Recommendation Framework in Tencent",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Slate recommendation, which presents users with a ranked item list in a single display, is ubiquitous across mainstream online platforms. While recent generative recommendation methods have shown strong potential in modeling item sequences with semantic IDs, directly applying them to industrial-scale slate recommendation faces a fundamental disconnect: entangled SID spaces confound high-level list planning, fine-grained autoregressive decoding over long sequences limits semantic planning efficiency, and token-level objectives misalign with holistic slate quality. In this paper, we propose HiGR, an industrial-scale hierarchical generative framework for slate recommendation that bridges this disconnect through a co-designed pipeline. First, HiGR learns structured SIDs via a Prefix-Contrastive Residual Quantized VAE (PCRQ-VAE). By enforcing high-level prefixes to capture shared semantics, PCRQ-VAE creates a controllable discrete space that acts as a prerequisite for efficient planning. Leveraging this structured space, our Hierarchical Slate Decoder (HSD) shifts autoregressive modeling ",
+    "status": "待读",
+    "url": "https://doi.org/10.1145/3799682.3840166",
+    "notes": "OpenAlex: https://openalex.org/W7117985811\n作者: Yunsheng Pang, Zijian Liu, Yudong Li, Shaojie Zhu, Zijian Luo\n发表日期: 2026-11-03\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1145/3799682.3840005",
+    "title": "Gryphon: A Unified Architecture for Semantic-ID Generation and Item-Level Scoring in Industrial Recommendations",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval (GR) has become a scalable approach to candidate generation: each item is assigned a short hierarchical token sequence called a Semantic ID (SID), and the next item's SID is decoded autoregressively. A practical limitation is that the decoder's beam search optimizes the likelihood of token sequences, not the relevance of the underlying items. These objectives diverge when sequence likelihood is poorly calibrated due to beam search error accumulation, and when several items collapse onto a single SID and receive identical scores. We introduce Gryphon, an encoder-decoder generative recommendation architecture that adds a jointly trained item-level scoring component alongside SID generation, reusing the encoder's user representation computed in a single forward pass. Instead of ranking SIDs by accumulated token likelihood, Gryphon resolves each generated SID to its concrete items and re-scores those items directly, which sidesteps miscalibrated sequence scores and separates items that collide on the same identifier. On an industrial music service, with item-level sc",
+    "status": "待读",
+    "url": "https://doi.org/10.1145/3799682.3840005",
+    "notes": "OpenAlex: https://openalex.org/W7164028401\n作者: Daria Tikhonovich, Oleg Sorokin, Vladislav Dodonov, Mariia Ulianova, Ilya Murzin\n发表日期: 2026-11-03\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1017/s2047884426100123",
+    "title": "Greece: Political developments and data in 2025",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Abstract Greece’s politics were dominated by renewed mobilisation over the 2023 Tempi rail disaster and by the Payment and Control Agency for Guidance and Guarantee Community Aid (OPEKEPE) agricultural subsidies scandal. The government survived a March no-confidence vote but faced sustained pressure over accountability, rule-of-law concerns and corruption. Konstantinos Tasoulas, New Democracy’s former President of the Parliament, was elected President of the Republic in February, while a March Cabinet reshuffle brought Kyriakos Pierrakakis to the Finance Ministry; in December he was elected Eurogroup President. The opposition remained fragmented. PASOK-KINAL retained its main opposition status but failed to capitalise decisively, SYRIZA continued to decline, and Alexis Tsipras resigned his parliamentary seat amid return speculation. Seismic activity on Santorini, a destructive wildfire season, a controversial labour law allowing 13-hour workdays under certain conditions, farmers’ blockades and persistent cost-of-living pressures reinforced a broader picture of governmental turbulence",
+    "status": "待读",
+    "url": "https://doi.org/10.1017/s2047884426100123",
+    "notes": "OpenAlex: https://openalex.org/W7225325420\n作者: Harris Mylonas, Lamprini Rori\n发表日期: 2026-11-05\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-11280153/v1",
+    "title": "Investor Psychology Under Geopolitical Conflict: Evidence from the 2026 Iran–Israel–USA War",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Abstract This mixed-methods study examines how retail investors described and responded to market uncertainty during the opening weeks of the 2026 Iran–Israel–USA war. Online recruitment produced 83 responses; 53 participants completed semi-structured interviews and subsequently completed the questionnaire, giving a final analytic sample of N = 53. The study used a sequential, qualitatively driven mixed-methods design with reflexive thematic analysis. The quantitative phase used study-specific scores derived from contextually adapted GAD-7 and PHQ-9 items, together with the Financial Anxiety Scale (FAS) and the Loss Aversion and Panic Behaviour in Investing Scale (LAPBIS). Because the GAD-7 and PHQ-9 wording was modified and the adapted versions were not formally validated, these scores are interpreted only as within-sample indicators, not as clinical measures or prevalence estimates. Mean scores were 11.5 (SD = 3.2) for the adapted GAD-7 indicator, 10.2 (SD = 3.8) for the adapted PHQ-9 indicator, 37.6 (SD = 6.2) for FAS, and 26.8 (SD = 5.5) for LAPBIS. The strongest Pearson correlat",
+    "status": "待读",
+    "url": "https://doi.org/10.21203/rs.3.rs-11280153/v1",
+    "notes": "OpenAlex: https://openalex.org/W7225249743\n作者: Mohd Ajmal\n发表日期: 2026-11-05\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "openalex:w7167871313",
+    "title": "\"None of This Is Normal\": The Golden Age of Legal Bribery",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Pennsylvania who signed a petition circulated by his super PAC. 5 The petition was nominally \"in support of free speech [and the] right to bear arms.\"6 Musk delivered such rewards, replete with oversized sweepstakes checks, that garnered exactly the attention, publicity, and incentives of the spectacle-by-design. 7 Functionally, however, Musk's petition-based rewards had little to do with free speech or the right to bear arms.Indeed, the scheme was more pernicious.As the nation's leading election scholar Rick Hasen puts it: \"Essentially what you're doing is you are . . .creating a lottery.You're creating a lottery where the only people eligible to participate in the lottery are people who register to vote, or are registered to vote, and that's illegal.\"8 Federal law is quite clear.52 U.S.C. § 10307(c) states that any individual who \"pays or offers to pay or accepts payment either for registration to vote or for voting shall be fined not more than $10,000 or imprisoned not more than five years, or both.\" 9 The obvious problem, however, goes right back to John Adams's point about virtu",
+    "status": "待读",
+    "url": "https://openalex.org/W7167871313",
+    "notes": "OpenAlex: https://openalex.org/W7167871313\n作者: James J. Sample\n发表日期: 2026-12-01\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
