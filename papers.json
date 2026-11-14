@@ -134,5 +134,112 @@
     "status": "待读",
     "url": "https://doi.org/10.48550/arxiv.2610.16979",
     "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.07425",
+    "title": "BRIDGE: Bridging the Semantic Quantization Gap for Generative Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE",
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative recommendation retrieves items by autoregressively generating Semantic IDs(SIDs), where an RQ-VAE quantizes each item into a hierarchical SID sequence that the decoder generates level by level. We identify an overlooked bottleneck in this paradigm: the Semantic Quantization Gap(SQG). Quantization derives SIDs from rich continuous signals, including codebook centroids, local neighborhood geometry, and level-wise entropy. However, the decoder receives only discrete identifiers and loses the semantic structure that shaped them. This mismatch manifests in three ways: a grounding gap, where the decoder lacks semantic anchors when target-side information is limited; a neighborhood gap, where token-level supervision discards inter-item similarity and exacerbates exposure bias; and a difficulty gap, where computation is allocated uniformly despite generation difficulty diminishing with depth. To bridge the SQG, we propose BRIDGE. Codebook-grounded latent reasoning injects frozen quantizer centroids as semantic anchors before SID generation. Privileged EMA self-distillation transfe",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.07425",
+    "notes": "OpenAlex: https://openalex.org/W7225409042\n作者: Yatong Xiao, Mingjie Sun, Peng Wang, Wenjin Wu, Peng Jiang\n发表日期: 2026-11-05\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.05799",
+    "title": "Item Representations Matter: Bridging Hard Semantic IDs and Soft Prototype Mixtures for Generative Retrieval",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Modern recommender systems rely on generative retrieval techniques to predict the next item either as discrete codes or as a continuous vector. On the one hand, Semantic IDs (SIDs) give discrete models shared parameters and pretrained semantic structure, but discretizing items into hard codes discards some information from the original content embeddings. On the other hand, continuous models avoid quantization, yet typically use flat item lookup tables with no explicit parameter tying across items. We ask whether a continuous recommender can introduce shared structure without making it a discrete bottleneck. We propose CAP-Mix, a flow recommender that represents each item as a soft mixture of shared prototypes plus an item-specific vector. The assignments, prototypes, and item vectors are trained jointly, and the soft representation is retained at inference. Pretrained information is optional: SID responsibilities can serve as a prior over assignments, while a full content embedding can initialize the item-specific vector without changing the initial flat table. In matched comparison",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.05799",
+    "notes": "OpenAlex: https://openalex.org/W7225300755\n作者: Vicente Balmaseda, Dongqi Fu, Jiarui Feng, Ren chen, Hanqing Zeng\n发表日期: 2026-11-04\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.07523",
+    "title": "OptST: Optimizing Semantic Tokenization for LLM-Enhanced Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Semantic information can enrich the identifiers and structured fields used by recommender systems. Semantic tokenization provides a structured representation of this information by converting LLM-derived user profiles into discrete tokens. In the common two-stage pipeline, the tokenizer is trained before the recommender. Its token assignments are then treated as fixed input features during recommendation training. As a result, the downstream recommender can learn how to use the assigned indices, but it cannot revise the semantic partition that produced them. Making this partition task-aware is difficult because nearest-code assignment is discrete, and unconstrained adaptation may also distort the geometry learned during pretraining. Moreover, a fixed token depth exposes the same semantic resolution to every interaction. We thus propose OptST (Optimizing Semantic Tokenization), which makes a pretrained tokenizer responsive to downstream recommendation. To revise token assignments without directly updating the pretrained encoder or base codebooks, OptST learns a low-rank deformation wh",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.07523",
+    "notes": "OpenAlex: https://openalex.org/W7225387194\n作者: Hanchong Chen, Jie Liu, Fuyuan Lyu, Dugang Liu, Lingjie Li\n发表日期: 2026-11-05\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.11079",
+    "title": "When Calibration Data Matter in Sub-4-Bit Language Model Quantization",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "生成式推荐"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Low-bit post-training quantization reduces language-model memory but can sharply degrade downstream task accuracy. Calibration usually relies on generic text, but when task-informed data recover accuracy and which quantizers benefit remain poorly understood. We introduce FragCal-DC, which supplements generic text with training documents from task families with low retention of full-precision accuracy in a two-bit scan. We use a two- to four-bit sweep to locate functional regimes and four-seed calibration comparisons to evaluate six data-dependent methods across six dense models (1.7B-8B) and ten tasks. At their lowest tested functional bit widths, iterative SignRound V2 and OmniQuant improve at two bits, whereas single-pass GPTQ and AWQ show small mean responses at three bits. At two bits, SignRound V2 gains 1.83 percentage points in mean ten-task accuracy over generic-text calibration across six models. At 70 billion parameters, GPTQ and SignRound V2 both improve at two bits, with functional generic-calibration baselines. For two-bit SignRound V2, task-level controls show that recov",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.11079",
+    "notes": "OpenAlex: https://openalex.org/W7225758353\n作者: Yehong Jiang, Yen-Kuang Chen, Xinmin Tian\n发表日期: 2026-11-08\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.12180",
+    "title": "TS-GEAR: Taobao Shangou GEnerative Ad Retrieval",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: On-demand delivery platforms such as DoorDash and Uber Eats impose a constraint absent in traditional e-commerce: merchants beyond the user's delivery range are invalid candidates rather than merely low-ranked. Generative retrieval has recently shown strong potential in large-scale retrieval systems. Adapting it to this setting, however, poses three challenges. First, existing semantic IDs encode geography only as a soft signal, so reachability can only rely on a non-differentiable post-generation hard truncation. Second, user preferences vary substantially across both regions and queries, so aggregating historical behaviors without conditioning on geography and the current query yields biased interest estimates. Third, the retrieved candidate set is evaluated by its collective value, yet autoregressive training scores each sequence independently, with no set-level signal to discourage redundant near-duplicates. To address the challenges, we propose TS-GEAR, a unified generative retrieval framework for on-demand delivery: (1) Geo-Semantic ID splits merchant identifiers into geographi",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.12180",
+    "notes": "OpenAlex: https://openalex.org/W7225726725\n作者: Guofeng Tong, Xu Zhang, Guangliang Yu, Haiqiang Wang, Guannan Cong\n发表日期: 2026-11-09\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1111/jofi.70096",
+    "title": "Presidential Address: Human Finance: Incorporating Insights from the Life Sciences",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: ABSTRACT Many of the key determinants of human behavior identified in the life sciences, such as stress response, impulse control, and mood regulation, remain absent from standard economic and finance models. This paper illustrates how such insights can enhance economic models in the context of inflation expectations. Combining a retrospective survey that elicits personal inflation histories with an experimental intervention that induces the reexperiencing of historic inflation, I show that physiological, emotional, and cognitive stress markers predict heightened inflation expectations and sharper memory recall, while also shaping personal economic narratives. These findings suggest novel policy tools to counter the persistent scars of economic distress and crisis experiences, for example, by designing experiences to provide predictability and control.",
+    "status": "待读",
+    "url": "https://doi.org/10.1111/jofi.70096",
+    "notes": "OpenAlex: https://openalex.org/W7225693790\n作者: Ulrike M. Malmendier\n发表日期: 2026-11-09\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.68143/60885336",
+    "title": "Sustainable Finance Beyond Market Utopias: Towards a Sociopolitical Approach",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Editors social inequalities but also undermining its own legitimacy and fuelling political backlash.A second blind spot concerns power.The extent to which economic elites, financial investors, and technology corporations shape political priorities, regulation, and public investment often remains underexamined (Klüh/Sturn 2027).This also raises the question of whether public subsidies and de-risking instruments genuinely contribute to socioecological transformation or instead stabilise existing power and ownership structures, with public funds securing private returns, while democratic control and redistribution fall by the wayside (Downey/ Blyth 2025).A third blind spot concerns the role of the state.Sustainable finance initiatives rest on the assumption that the state should play a subordinate role vis-à-vis the private economy, limited to merely correcting market outcomes.Given the scale and long-term nature of the transformation required, this assumption is questionable.Mission-oriented policy conceives of the state not simply as a mechanism for correcting market failures, but as ",
+    "status": "待读",
+    "url": "https://doi.org/10.68143/60885336",
+    "notes": "OpenAlex: https://openalex.org/W7225822921\n作者: Ulrich Helmut Klüh, Lisa Knoll, Daniel Mertens, Silke Ötsch\n发表日期: 2026-11-11\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "openalex:w7167871313",
+    "title": "\"None of This Is Normal\": The Golden Age of Legal Bribery",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Pennsylvania who signed a petition circulated by his super PAC. 5 The petition was nominally \"in support of free speech [and the] right to bear arms.\"6 Musk delivered such rewards, replete with oversized sweepstakes checks, that garnered exactly the attention, publicity, and incentives of the spectacle-by-design. 7 Functionally, however, Musk's petition-based rewards had little to do with free speech or the right to bear arms.Indeed, the scheme was more pernicious.As the nation's leading election scholar Rick Hasen puts it: \"Essentially what you're doing is you are . . .creating a lottery.You're creating a lottery where the only people eligible to participate in the lottery are people who register to vote, or are registered to vote, and that's illegal.\"8 Federal law is quite clear.52 U.S.C. § 10307(c) states that any individual who \"pays or offers to pay or accepts payment either for registration to vote or for voting shall be fined not more than $10,000 or imprisoned not more than five years, or both.\" 9 The obvious problem, however, goes right back to John Adams's point about virtu",
+    "status": "待读",
+    "url": "https://openalex.org/W7167871313",
+    "notes": "OpenAlex: https://openalex.org/W7167871313\n作者: James J. Sample\n发表日期: 2026-12-01\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
