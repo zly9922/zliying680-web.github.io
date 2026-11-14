@@ -1,27 +1,39 @@
 # 待审核论文（免费元数据版本）
 
-运行日期：2026-10-27（UTC）
+运行日期：2026-11-14（UTC）
 
 ⚠️ **仅供人工审核；尚未公开发布。** 内容由 OpenAlex 元数据和关键词规则生成，中文摘要没有自动翻译，请核实原文、日期、相关性并改写摘要。
 
 审核时在 PR 的 Files changed 中核查 papers.json；移除不合适论文后再合并。
 
-- **[Personalized LLM Recommendation with Semantic IDs: Autoregressive Beam Search vs. Multi-Token Prediction](https://doi.org/10.48550/arxiv.2610.15864)**（2026；生成式推荐；匹配分 15）
-  - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Large-scale personalization is shifting from embedding-table retrieval to LLM-based recommenders that generate the Semantic ID (SID) of the item to recommend, where each SID is a short sequence of discrete hierarchical content codes. A single instruction-tuned model can then unify retrieval, content understanding, and language, and recommend brand-new titles from their content alone using SID; then, how should…
+- **[BRIDGE: Bridging the Semantic Quantization Gap for Generative Recommendation](https://doi.org/10.48550/arxiv.2611.07425)**（2026；生成式推荐；匹配分 19）
+  - 标签：Semantic ID, RQ-VAE, 码本稳定性
+  - 英文摘要（未经过 AI 翻译）: Generative recommendation retrieves items by autoregressively generating Semantic IDs(SIDs), where an RQ-VAE quantizes each item into a hierarchical SID sequence that the decoder generates level by level. We identify an overlooked bottleneck in this paradigm: the Semantic Quantization Gap(SQG). Quantization derives SIDs from rich continuous signals, including codebook centroids, local neighborhood geometry, an…
 
-- **[Evolving Semantic Indexes for Generative Retrieval](https://doi.org/10.48550/arxiv.2610.28568)**（2026；生成式推荐；匹配分 14）
+- **[Item Representations Matter: Bridging Hard Semantic IDs and Soft Prototype Mixtures for Generative Retrieval](https://doi.org/10.48550/arxiv.2611.05799)**（2026；生成式推荐；匹配分 19）
   - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Generative retrieval (GR) casts search and recommendation as autoregressive generation of discrete semantic identifiers (SIDs). SID design largely determines GR quality, but its discrete, interdependent components (SID construction, collision handling, decoding, and training) cannot be optimized end-to-end with gradients and remain largely hand-designed. We introduce a framework that improves these components …
+  - 英文摘要（未经过 AI 翻译）: Modern recommender systems rely on generative retrieval techniques to predict the next item either as discrete codes or as a continuous vector. On the one hand, Semantic IDs (SIDs) give discrete models shared parameters and pretrained semantic structure, but discretizing items into hard codes discards some information from the original content embeddings. On the other hand, continuous models avoid quantization…
 
-- **[Beyond Semantic IDs: Finite-Beam Reachability and Continuous-Query Generation in Generative Recommendation](https://doi.org/10.48550/arxiv.2610.12977)**（2026；生成式推荐；匹配分 13）
-  - 标签：Semantic ID
-  - 英文摘要（未经过 AI 翻译）: Generative recommendation (GR) of social media platforms commonly retrieves items by autoregressively decoding discrete Semantic IDs (SIDs) with finite-width beam search. This work examines how this output interface constrains whether held-out targets enter finite returned lists, while distinguishing catalog-wide scoreability from empirical top-K support. We introduce two continuous-query paradigms: CQG-Single…
-
-- **[UniSGR-V2: Stepwise Target-Side Feature Anticipation and Crossing for Generative Recommendation](https://doi.org/10.48550/arxiv.2610.16132)**（2026；生成式推荐；匹配分 12）
+- **[OptST: Optimizing Semantic Tokenization for LLM-Enhanced Recommendation](https://doi.org/10.48550/arxiv.2611.07523)**（2026；生成式推荐；匹配分 8）
   - 标签：码本稳定性
-  - 英文摘要（未经过 AI 翻译）: Semantic-ID-based generative recommendation unifies retrieval and ranking through autoregressive decoding but differs structurally from discriminative models, which can directly access rich target-item side features. The attributes are compressed into a finite codebook during quantization, while the target item remains undetermined during decoding and its features cannot be looked up. This target-side feature …
+  - 英文摘要（未经过 AI 翻译）: Semantic information can enrich the identifiers and structured fields used by recommender systems. Semantic tokenization provides a structured representation of this information by converting LLM-derived user profiles into discrete tokens. In the common two-stage pipeline, the tokenizer is trained before the recommender. Its token assignments are then treated as fixed input features during recommendation train…
 
-- **[WeGR: Towards Unified Generative Retrieval via Behavior-aware Tokenization and Preference Alignment](https://doi.org/10.48550/arxiv.2610.16979)**（2026；生成式推荐；匹配分 12）
-  - 标签：码本稳定性
-  - 英文摘要（未经过 AI 翻译）: Generative retrieval (GR) offers a promising paradigm for industrial search by unifying candidate generation within an autoregressive framework. However, effectively leveraging user behaviors in industrial GR remains challenging: existing SID tokenization methods struggle to preserve collaborative signals while maintaining balanced codebook utilization, whereas reinforcement learning (RL) for prioritizing high…
+- **[When Calibration Data Matter in Sub-4-Bit Language Model Quantization](https://doi.org/10.48550/arxiv.2611.11079)**（2026；生成式推荐；匹配分 6）
+  - 标签：生成式推荐
+  - 英文摘要（未经过 AI 翻译）: Low-bit post-training quantization reduces language-model memory but can sharply degrade downstream task accuracy. Calibration usually relies on generic text, but when task-informed data recover accuracy and which quantizers benefit remain poorly understood. We introduce FragCal-DC, which supplements generic text with training documents from task families with low retention of full-precision accuracy in a two-…
+
+- **[TS-GEAR: Taobao Shangou GEnerative Ad Retrieval](https://doi.org/10.48550/arxiv.2611.12180)**（2026；生成式推荐；匹配分 5）
+  - 标签：Semantic ID
+  - 英文摘要（未经过 AI 翻译）: On-demand delivery platforms such as DoorDash and Uber Eats impose a constraint absent in traditional e-commerce: merchants beyond the user's delivery range are invalid candidates rather than merely low-ranked. Generative retrieval has recently shown strong potential in large-scale retrieval systems. Adapting it to this setting, however, poses three challenges. First, existing semantic IDs encode geography onl…
+
+- **[Presidential Address: Human Finance: Incorporating Insights from the Life Sciences](https://doi.org/10.1111/jofi.70096)**（2026；金融市场；匹配分 12）
+  - 标签：金融市场
+  - 英文摘要（未经过 AI 翻译）: ABSTRACT Many of the key determinants of human behavior identified in the life sciences, such as stress response, impulse control, and mood regulation, remain absent from standard economic and finance models. This paper illustrates how such insights can enhance economic models in the context of inflation expectations. Combining a retrospective survey that elicits personal inflation histories with an experiment…
+
+- **[Sustainable Finance Beyond Market Utopias: Towards a Sociopolitical Approach](https://doi.org/10.68143/60885336)**（2026；金融市场；匹配分 10）
+  - 标签：金融市场
+  - 英文摘要（未经过 AI 翻译）: Editors social inequalities but also undermining its own legitimacy and fuelling political backlash.A second blind spot concerns power.The extent to which economic elites, financial investors, and technology corporations shape political priorities, regulation, and public investment often remains underexamined (Klüh/Sturn 2027).This also raises the question of whether public subsidies and de-risking instruments…
+
+- **["None of This Is Normal": The Golden Age of Legal Bribery](https://openalex.org/W7167871313)**（2026；金融市场；匹配分 5）
+  - 标签：特朗普言论, 黄金
+  - 英文摘要（未经过 AI 翻译）: Pennsylvania who signed a petition circulated by his super PAC. 5 The petition was nominally "in support of free speech [and the] right to bear arms."6 Musk delivered such rewards, replete with oversized sweepstakes checks, that garnered exactly the attention, publicity, and incentives of the spectacle-by-design. 7 Functionally, however, Musk's petition-based rewards had little to do with free speech or the ri…
