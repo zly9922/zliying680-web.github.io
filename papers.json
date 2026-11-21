@@ -134,5 +134,101 @@
     "status": "待读",
     "url": "https://doi.org/10.48550/arxiv.2610.16979",
     "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.20721",
+    "title": "CARE: Contrastive-Anchored Residual Encoding with Listwise Reconstruction for Retrieval-Oriented Semantic IDs",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE",
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval replaces nearest-neighbor search with the generation of a document's semantic ID (SID), so the SID tokenizer bounds what the retriever can recall. Common SID constructions (residual k-means, RQ-VAE, finite scalar quantization, capacity balancing) optimize criteria defined on document embeddings alone and do not control whether a query can still find its relevant documents after quantization. We propose two retrieval-oriented SID tokenizers. CARE-SID (Contrastive-Anchored Residual Encoding for Semantic IDs) quantizes in a retrieval-aligned space: a zero-initialized residual alignment network is trained with a query-document contrastive loss before quantization, an anchor loss and a reconstruction target fixed to the original embedding prevent drift and collapse, and reference-vector rating residual quantization assigns the codes. CARE-LR (CARE with Listwise Reconstruction) then distills, for each training query, the similarity distribution that the original embeddings induce over a candidate list into the SID reconstructions, through a function-preserving layer-re",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.20721",
+    "notes": "OpenAlex: https://openalex.org/W7234896438\n作者: Yuan Xu, Dawei Chen, Xiaoguang Lin, Xin Chen, Yulong Ou\n发表日期: 2026-11-16\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1145/3799682.3840166",
+    "title": "HiGR: Industrial-Scale Hierarchical Generative Slate Recommendation Framework in Tencent",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Slate recommendation, which presents users with a ranked item list in a single display, is ubiquitous across mainstream online platforms. While recent generative recommendation methods have shown strong potential in modeling item sequences with semantic IDs, directly applying them to industrial-scale slate recommendation faces a fundamental disconnect: entangled SID spaces confound high-level list planning, fine-grained autoregressive decoding over long sequences limits semantic planning efficiency, and token-level objectives misalign with holistic slate quality. In this paper, we propose HiGR, an industrial-scale hierarchical generative framework for slate recommendation that bridges this disconnect through a co-designed pipeline. First, HiGR learns structured SIDs via a Prefix-Contrastive Residual Quantized VAE (PCRQ-VAE). By enforcing high-level prefixes to capture shared semantics, PCRQ-VAE creates a controllable discrete space that acts as a prerequisite for efficient planning. Leveraging this structured space, our Hierarchical Slate Decoder (HSD) shifts autoregressive modeling ",
+    "status": "待读",
+    "url": "https://doi.org/10.1145/3799682.3840166",
+    "notes": "OpenAlex: https://openalex.org/W7117985811\n作者: Yunsheng Pang, Zijian Liu, Yudong Li, Shaojie Zhu, Zijian Luo\n发表日期: 2026-11-06\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.16395",
+    "title": "TriGen: A Generative Paradigm for Trigger-Induced Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative recommendation typically operates under the User-Induced Recommendation (UIR) setting, predicting target items by autoregressively generating semantic IDs as a passive continuation of long-term user history. However, this paradigm overlooks Trigger-Induced Recommendation (TIR), an essential industrial scenario where a user click triggers an immediate follow-up feed. In TIR, recommendations must dynamically align with the instant trigger intent without compromising historical preference continuity. Traditional TIR methods rely on discriminative scoring and cannot guide token-level generation, while existing generative models lack mechanisms to reconcile this structural tension. To address this challenge, we propose TriGen, establishing a tailored generative paradigm for trigger-induced recommendation. TriGen introduces calibrated tail injection to re-encode local history, adaptively arbitrates between persistent tastes and immediate impulses via dynamic gating, and applies position-specific transformations to sustain level-aware trigger guidance across decoding steps. Exten",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.16395",
+    "notes": "OpenAlex: https://openalex.org/W7225999483\n作者: Muyu Zou, Haibo Xing, Shunye Tang, Liyan Tie, Lingyu Mu\n发表日期: 2026-11-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.61838/kman.jtesm.535",
+    "title": "A Recommender System for Developing Marketing Strategies for Online Products Based on Sentiment Analysis of User Reviews Using Deep Learning Algorithms",
+    "year": "2027",
+    "category": "生成式推荐",
+    "tags": [
+      "市场情绪",
+      "生成式推荐"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: This study aimed to develop a recommender system for formulating marketing strategies for online products based on sentiment analysis of user reviews and to compare the performance of deep learning algorithms in predicting product sales. This applied, descriptive-analytical study was based on textual data obtained from users of an online store. User reviews of products were employed as the primary input data, and the sentiments expressed in the reviews were classified into positive, negative, and neutral categories. Three deep learning algorithms—Convolutional Neural Network (CNN), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM)—were implemented for sentiment analysis and sales prediction. The model incorporated product- and review-related features, including user sentiment, price, brand, quality, delivery, packaging, support, warranty, and other product characteristics. Model performance was comparatively evaluated using accuracy, precision, F1-score, recall, confusion matrices, and receiver operating characteristic (ROC) curves. Comparative results demonstrated th",
+    "status": "待读",
+    "url": "https://doi.org/10.61838/kman.jtesm.535",
+    "notes": "OpenAlex: https://openalex.org/W7212422481\n作者: Maryam Golmeshki, Alireza Farokh Bakht Foomani, Mohammad Taleghani, Narges Delafrooz\n发表日期: 2027-01-01\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.11079",
+    "title": "When Calibration Data Matter in Sub-4-Bit Language Model Quantization",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "生成式推荐"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Low-bit post-training quantization reduces language-model memory but can sharply degrade downstream task accuracy. Calibration usually relies on generic text, but when task-informed data recover accuracy and which quantizers benefit remain poorly understood. We introduce FragCal-DC, which supplements generic text with training documents from task families with low retention of full-precision accuracy in a two-bit scan. We use a two- to four-bit sweep to locate functional regimes and four-seed calibration comparisons to evaluate six data-dependent methods across six dense models (1.7B-8B) and ten tasks. At their lowest tested functional bit widths, iterative SignRound V2 and OmniQuant improve at two bits, whereas single-pass GPTQ and AWQ show small mean responses at three bits. At two bits, SignRound V2 gains 1.83 percentage points in mean ten-task accuracy over generic-text calibration across six models. At 70 billion parameters, GPTQ and SignRound V2 both improve at two bits, with functional generic-calibration baselines. For two-bit SignRound V2, task-level controls show that recov",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.11079",
+    "notes": "OpenAlex: https://openalex.org/W7225758353\n作者: Yehong Jiang, Yen-Kuang Chen, Xinmin Tian\n发表日期: 2026-11-08\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.1111/1475-679x.70097",
+    "title": "Partisan Banks and Creditor Coordination Within Loan Syndicates",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "金融市场"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: We investigate how firm‐level partisanship influences interactions between banks in the syndicated loan market. Because politically divergent banks hold conflicting perceptions of economic conditions, ideological distance between banks impedes consensus and elevates expected coordination costs. We find that greater political distance between a lead arranger and a participant reduces the participant's likelihood of joining a syndicate and lowers its retained loan share relative to the lead. The relation between political distance and loan share differences intensifies during periods of high national political polarization. Moreover, greater political diversity within a syndicate is associated with less restrictive loan covenants and higher interest spreads, reflecting a trade‐off where lenders sacrifice contingent control to avoid costly renegotiation gridlock. Validating our disagreement mechanism, we show that following presidential elections, banks politically misaligned with the incoming administration issue significantly more pessimistic macroeconomic forecasts than aligned banks",
+    "status": "待读",
+    "url": "https://doi.org/10.1111/1475-679x.70097",
+    "notes": "OpenAlex: https://openalex.org/W4394843326\n作者: Robert M. Bushman, Sang Woo Sohn, Jianxin Zhao\n发表日期: 2026-11-16\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "openalex:w7167871313",
+    "title": "\"None of This Is Normal\": The Golden Age of Legal Bribery",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Pennsylvania who signed a petition circulated by his super PAC. 5 The petition was nominally \"in support of free speech [and the] right to bear arms.\"6 Musk delivered such rewards, replete with oversized sweepstakes checks, that garnered exactly the attention, publicity, and incentives of the spectacle-by-design. 7 Functionally, however, Musk's petition-based rewards had little to do with free speech or the right to bear arms.Indeed, the scheme was more pernicious.As the nation's leading election scholar Rick Hasen puts it: \"Essentially what you're doing is you are . . .creating a lottery.You're creating a lottery where the only people eligible to participate in the lottery are people who register to vote, or are registered to vote, and that's illegal.\"8 Federal law is quite clear.52 U.S.C. § 10307(c) states that any individual who \"pays or offers to pay or accepts payment either for registration to vote or for voting shall be fined not more than $10,000 or imprisoned not more than five years, or both.\" 9 The obvious problem, however, goes right back to John Adams's point about virtu",
+    "status": "待读",
+    "url": "https://openalex.org/W7167871313",
+    "notes": "OpenAlex: https://openalex.org/W7167871313\n作者: James J. Sample\n发表日期: 2026-12-01\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
