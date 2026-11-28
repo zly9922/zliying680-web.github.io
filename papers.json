@@ -134,5 +134,86 @@
     "status": "待读",
     "url": "https://doi.org/10.48550/arxiv.2610.16979",
     "notes": "OpenAlex: https://openalex.org/W7221834881\n作者: Jiajun Han, Guoxin Ma, Felix, Liangsheng Xu, Ruiqi Yu\n发表日期: 2026-10-12\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.25256",
+    "title": "LQ-Rec: Late Quantization for Sequential Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval (GR) for sequential recommendation compresses each item into a short semantic ID and trains an autoregressive decoder to generate next-item codes from a user history. While appealing for cold-start handling and storage, au- toregressive GR suffers a structural scaling limit: typically, longer semantic IDs reduce quantization error in principle but degrade ranking quality and quadratic memory usage against semantic ID length. We propose Late Quantization (LQ), a non-autoregressive paradigm that confines discretization to the output (item) side of the pipeline. The encoder and scoring rule operate in continuous space, while items are stored and matched as semantic IDs produced by an end-to-end-trained residual quantizer. This architectural shift permits an additive error decomposition and a pairwise ordering theorem that jointly bound the quantization- induced ranking drop, a structural guarantee absent in prior semantic-ID recommenders. Across four public benchmarks, the resulting recommender, LQ-Rec, delivers three capabilities simultaneously: ranking quality imp",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.25256",
+    "notes": "OpenAlex: https://openalex.org/W7236996156\n作者: Satoshi Koide, Yueqi Wang, Julian McAuley\n发表日期: 2026-11-18\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.20721",
+    "title": "CARE: Contrastive-Anchored Residual Encoding with Listwise Reconstruction for Retrieval-Oriented Semantic IDs",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID",
+      "RQ-VAE",
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative retrieval replaces nearest-neighbor search with the generation of a document's semantic ID (SID), so the SID tokenizer bounds what the retriever can recall. Common SID constructions (residual k-means, RQ-VAE, finite scalar quantization, capacity balancing) optimize criteria defined on document embeddings alone and do not control whether a query can still find its relevant documents after quantization. We propose two retrieval-oriented SID tokenizers. CARE-SID (Contrastive-Anchored Residual Encoding for Semantic IDs) quantizes in a retrieval-aligned space: a zero-initialized residual alignment network is trained with a query-document contrastive loss before quantization, an anchor loss and a reconstruction target fixed to the original embedding prevent drift and collapse, and reference-vector rating residual quantization assigns the codes. CARE-LR (CARE with Listwise Reconstruction) then distills, for each training query, the similarity distribution that the original embeddings induce over a candidate list into the SID reconstructions, through a function-preserving layer-re",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.20721",
+    "notes": "OpenAlex: https://openalex.org/W7234896438\n作者: Yuan Xu, Dawei Chen, Xiaoguang Lin, Xin Chen, Yulong Ou\n发表日期: 2026-11-16\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.70267/cai.v3n6.186196",
+    "title": "From Patches to Codebooks: A Discrete-Continuous Spectrum of Transformer Tokenization Across Modalities",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "码本稳定性"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Since its introduction, the Transformer has expanded from text processing to multimodal fields such as images and speech. During this process, a recurring question is how to convert continuous and heterogeneous raw signals into token representations that a model can process. This tokenization process is often accompanied by varying degrees of information selection or bottlenecks, and has consequently developed into two basic routes: discrete quantization (codebook/vector quantization [VQ]) and continuous representations (patches/latent features). Several existing representative reviews mainly focus on discrete tokenization, while unified comparisons of the continuous and discrete routes remain relatively limited. Taking the discrete-continuous spectrum as its main thread, this paper reviews representative work on continuous serialization, discrete codebook quantization, discrete units in speech, latent bottlenecks, and continuous latent variables. It analyzes the respective trade-offs of discrete and continuous approaches in terms of task suitability, information efficiency, vocabula",
+    "status": "待读",
+    "url": "https://doi.org/10.70267/cai.v3n6.186196",
+    "notes": "OpenAlex: https://openalex.org/W7240039776\n作者: Xinyuan Du\n发表日期: 2026-11-26\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.22163",
+    "title": "Cluster-Guided Decoding with Trust-Region Constraints for Personalized Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "生成式推荐"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Most recommenders score each item in the catalog separately, and do not explicitly model which semantic region of the catalog a recommendation belongs to. Models expressive enough to offer that control are often too slow to run over a full catalog for online inference. In this paper, we present Cluster-Guided Generative Reconstruction (CG2R), which learns a hierarchy of semantic clusters and uses a cluster-level prior to steer item ranking for personalized recommendations. Unlike existing systems that only use clusters to pre-select candidates, CG2R adds the cluster prior directly to the item scoring rule, so that the learned cluster structure shapes the ranking itself. Because the prior is assembled from cluster centroids rather than per-item statistics, it remains defined even for cold-start users when no history is available. Across the three benchmark datasets evaluated, CG2R outperforms classical, neural, and LLM-based baselines in terms of Recall and nDCG, with its performance gains widening as the catalog grows sparser. In addition, CG2R serves recommendations in milliseconds,",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.22163",
+    "notes": "OpenAlex: https://openalex.org/W7236039646\n作者: Gezheng Wen, Chao Shen, Raviteja Anantha, Tan Shen Cliff Chung, Layne C. Price\n发表日期: 2026-11-17\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2611.22838",
+    "title": "Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation",
+    "year": "2026",
+    "category": "生成式推荐",
+    "tags": [
+      "Semantic ID"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Generative recommenders decode the semantic ID of a user's next item with a language model, and post-training them with reinforcement learning (RL) after supervised fine-tuning (SFT) has become standard practice. The gains are mostly reported on the first ten results, yet in deployment such models hand hundreds of candidates to a downstream ranker or reward model. We show that RL post-training has a hidden cost: it improves accuracy at the top of the list (hit@K for small K) but, on all five datasets we study, lowers the recall of the candidate list (hit@K for K in the hundreds). The model becomes a better ranker and a worse retriever. Controlled experiments trace the loss to the negative advantages that RL assigns to the candidates it samples, the rollout. The root cause is that only one next item is logged per user, so RL treats every other candidate as wrong. Yet these candidates are the model's most plausible alternatives, and often the next items of other users with similar histories. Penalising them pushes down exactly what similar users choose next, and these items drop out of",
+    "status": "待读",
+    "url": "https://doi.org/10.48550/arxiv.2611.22838",
+    "notes": "OpenAlex: https://openalex.org/W7236083302\n作者: Yuheng Chen, Fan Zhang, Yixuan Xu, Chao Yang, Yang Xiang\n发表日期: 2026-11-17\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
+  },
+  {
+    "id": "openalex:w7167871313",
+    "title": "\"None of This Is Normal\": The Golden Age of Legal Bribery",
+    "year": "2026",
+    "category": "金融市场",
+    "tags": [
+      "特朗普言论",
+      "黄金"
+    ],
+    "summary": "英文摘要（未经过 AI 翻译）: Pennsylvania who signed a petition circulated by his super PAC. 5 The petition was nominally \"in support of free speech [and the] right to bear arms.\"6 Musk delivered such rewards, replete with oversized sweepstakes checks, that garnered exactly the attention, publicity, and incentives of the spectacle-by-design. 7 Functionally, however, Musk's petition-based rewards had little to do with free speech or the right to bear arms.Indeed, the scheme was more pernicious.As the nation's leading election scholar Rick Hasen puts it: \"Essentially what you're doing is you are . . .creating a lottery.You're creating a lottery where the only people eligible to participate in the lottery are people who register to vote, or are registered to vote, and that's illegal.\"8 Federal law is quite clear.52 U.S.C. § 10307(c) states that any individual who \"pays or offers to pay or accepts payment either for registration to vote or for voting shall be fined not more than $10,000 or imprisoned not more than five years, or both.\" 9 The obvious problem, however, goes right back to John Adams's point about virtu",
+    "status": "待读",
+    "url": "https://openalex.org/W7167871313",
+    "notes": "OpenAlex: https://openalex.org/W7167871313\n作者: James J. Sample\n发表日期: 2026-12-01\n请审核论文真实性、研究相关性，并补充中文研究笔记。"
   }
 ]
